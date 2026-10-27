@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+    background:
+        linear-gradient(
+            135deg,
+            #d1fae5,
+            #a7f3d0
+        );
+    color: #14532d;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 390px;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow:
+        0 15px 35px
+        rgba(5, 150, 105, 0.20);
+}
+
+form h1 {
+    text-align: center;
+    color: #059669;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #6b9b86;
+    margin-bottom: 28px;
+    font-size: 15px;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+    color: #166534;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #a7f3d0;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    color: #14532d;
+    background: #f7fffb;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #10b981;
+    box-shadow:
+        0 0 8px
+        rgba(16, 185, 129, 0.20);
+}
+
+input::placeholder {
+    color: #8ab6a2;
+}
+
+.btn-principal {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #10b981;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    background: #059669;
+    transform: translateY(-2px);
+}
+
+.separador {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+    color: #75a991;
+}
+
+.separador::before,
+.separador::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #bbf7d0;
+}
+
+.separador span {
+    font-size: 13px;
+}
+
+.btn-secundario {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #d1fae5;
+    color: #166534;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-secundario:hover {
+    background: #a7f3d0;
+    transform: translateY(-2px);
+}
+
+.topo {
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    box-shadow:
+        0 3px 15px
+        rgba(5, 150, 105, 0.12);
+}
+
+.logo {
+    color: #059669;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.btn-sair {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 9px;
+    background: #10b981;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-sair:hover {
+    background: #059669;
+    transform: translateY(-2px);
+}
+
+.conteudo-home {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.card-home {
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow:
+        0 15px 35px
+        rgba(5, 150, 105, 0.16);
+}
+
+.card-home h1 {
+    color: #059669;
+    margin-bottom: 10px;
+}
+
+.card-home p {
+    color: #5f8f79;
+    margin-bottom: 25px;
+}
+
+#nomeUsuario {
+    color: #047857;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.opcao {
+    width: 100%;
+    max-width: 300px;
+    padding: 25px;
+    background: #ecfdf5;
+    border-radius: 15px;
+    border: 1px solid #a7f3d0;
+}
+
+.opcao h3 {
+    color: #059669;
+    margin-bottom: 10px;
+}
+
+.opcao p {
+    margin-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 25px;
+        max-width: 95%;
+    }
+
+    .topo {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .conteudo-home {
+        padding: 20px;
+    }
+
+    .card-home {
+        padding: 25px;
+    }
+}
